@@ -1,0 +1,21 @@
+openapi: 3.0.0
+info:
+  title: M1 GR Vortex Prism API
+  version: 1.0.0-resonance
+paths:
+  /vault/mount:
+    post:
+      summary: Establish Resonant Interlock
+      requestBody:
+        content:
+          application/json:
+            schema:
+              properties:
+                harmonic_key: {type: string, example: "32768Hz-XY-CUT"}
+  /object/{id}:
+    get:
+      summary: Retrieve via Thermo-Optic Microwave Pulse
+      responses:
+        '200':
+          content:
+            application/octet-stream: {schema: {type: string, format: binary}}
