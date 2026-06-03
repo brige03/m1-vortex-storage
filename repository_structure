@@ -1,0 +1,9 @@
+m1-vortex-storage/
+├── README.md               # The Hybrid Master Document
+├── BOM.md                  # Hardware & Software Bill of Materials
+├── specs/
+│   └── prism-api-spec.yaml # OpenAPI 3.0 Resonant Interface
+├── core/
+│   └── phi_allocation.py   # Fibonacci Packing Logic
+└── docs/
+    └── security_whitepaper.md # Moiré & Russian Doll Protocol
